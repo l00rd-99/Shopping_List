@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список покупок</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1>🛒 Покупки</h1>
+
+        <nav>
+
+            <a href="index.html" class="active">🏠 Главная</a>
+            <a href="form.html">➕ Добавить</a>
+            <a href="stats.html">📊 Статистика</a>
+
+        </nav>
+
+        <button id="themeToggle">🌙</button>
+
+    </header>
+
+    <main>
+
+        <div class="search-box">
+            <input id="search" placeholder="Поиск...">
+        </div>
+
+        <div class="sort-box">
+
+            <button onclick="setSort('name')">
+                🔤 Название
+            </button>
+
+            <button onclick="setSort('quantity')">
+                🔢 Количество
+            </button>
+
+        </div>
+
+        <h2 class="section-title">🛒 Покупки</h2>
+        <div id="list"></div>
+
+        <h2 class="section-title">✅ Куплено</h2>
+        <div id="doneList"></div>
+
+        <a href="form.html" class="fab">+</a>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+
+</html>
